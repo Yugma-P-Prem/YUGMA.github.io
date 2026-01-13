@@ -1,81 +1,165 @@
-<!-- FILE: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yugma P Prem | Cyber Security Portfolio</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yugma P Prem — Cybersecurity Portfolio</title>
+
+  <meta name="description" content="Cybersecurity enthusiast with hands-on SOC, SIEM, and penetration testing experience. MCA graduate with CICSA training." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yugma P Prem",
+    "email": "mailto:yugmapprem@gmail.com",
+    "jobTitle": "Cybersecurity Analyst (Fresher)",
+    "alumniOf": "KTU University",
+    "knowsLanguage": ["English","Malayalam"],
+    "sameAs": ["https://www.linkedin.com"]
+  }
+  </script>
 </head>
+
 <body>
-<header>
-<h1>Yugma P Prem</h1>
-<p>Cyber Security Enthusiast | SOC Analyst Fresher</p>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certificates">Certificates</a>
-<a href="#contact">Contact</a>
-</nav>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#">YP</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+  </div>
 </header>
 
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Yugma P Prem</h1>
+      <p class="lead">
+        Cybersecurity enthusiast with hands-on experience in SOC operations, SIEM monitoring, and penetration testing.
+        Trained through CICSA with strong knowledge of OSI model, network protocols, and security tools.
+      </p>
 
-<section id="about">
-  <h2>About Me</h2>
-<p>
-Passionate cyber security enthusiast with hands-on experience from the CICSA course.
-Skilled in vulnerability assessment, network monitoring, penetration testing, and SIEM tools.
-Strong understanding of OSI model, network protocols, and security operations.
-</p>
+      <ul class="quick-info">
+        <li><strong>Email:</strong> <a href="mailto:yugmapprem@gmail.com">yugmapprem@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+916282452191">+91 62824 52191</a></li>
+        <li><strong>Location:</strong> Thrissur, Kerala, India</li>
+      </ul>
+    </div>
+
+    <div class="hero-media">
+      <img src="assets/avatar.jpeg" alt="Yugma P Prem profile photo" />
+    </div>
+  </div>
 </section>
 
+<main>
 
-<section id="skills">
-<h2>Skills</h2>
-<ul>
-<li>Nmap, Hydra, Metasploit</li>
-<li>Wireshark, Burp Suite</li>
-<li>SIEM: Splunk, ELK Stack</li>
-<li>OWASP, Vulnerability Assessment</li>
-<li>Network Monitoring & Incident Response</li>
-</ul>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Passionate and motivated cybersecurity enthusiast with a solid foundation gained through the CICSA course.
+      Skilled in vulnerability assessment, network monitoring, and penetration testing using industry-standard tools.
+      Eager to contribute to real-world security operations and grow as a SOC Analyst.
+    </p>
+  </div>
 </section>
 
+<section id="skills" class="section">
+  <div class="container grid-2">
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="card">
-<h3>Elasticsearch SIEM – Brute Force Attack Detection</h3>
-<p>
-Built a virtual lab using Kali Linux and Ubuntu to detect SSH brute-force attacks.
-Configured Elastic Agent, created custom detection rules, and verified alerts in Kibana.
-  </p>
-</div>
+    <div>
+      <h2>Technical Skills</h2>
+      <ul class="pill-list">
+        <li>Vulnerability Identification & Analysis</li>
+        <li>Network Monitoring</li>
+        <li>Penetration Testing</li>
+        <li>SIEM Monitoring</li>
+        <li>Incident Detection</li>
+        <li>Log Analysis</li>
+        <li>OWASP Top 10</li>
+        <li>OSI Model</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Security Tools</h2>
+      <ul class="kv-list">
+        <li><strong>SIEM:</strong> Splunk, ELK Stack</li>
+        <li><strong>Network:</strong> Wireshark, Nmap</li>
+        <li><strong>Offensive:</strong> Hydra, Metasploit, Burp Suite</li>
+        <li><strong>Platforms:</strong> Kali Linux, Ubuntu, VirtualBox</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
 
-<section id="certificates">
-<h2>Certificates</h2>
-<ul>
-<li>In the Trenches: SOC – EC Council (Coursera)</li>
-<li>Certified IT Infrastructure & Cyber SOC Analyst – RTHA</li>
-<li>Workshop on Cyber Security & Ethical Hacking – Blue Shell</li>
-</ul>
+    <article class="card">
+      <h3>Elasticsearch SIEM – Brute Force Attack Detection</h3>
+      <p>
+        Built a virtual SOC lab using Kali Linux (attacker) and Ubuntu (target).
+        Configured Elastic Agent and SIEM to detect SSH brute-force attacks.
+      </p>
+      <ul>
+        <li>Simulated attacks using Hydra</li>
+        <li>Created custom detection rules in Kibana</li>
+        <li>Enabled real-time alerts and email notifications</li>
+        <li>Validated incident response workflow</li>
+      </ul>
+    </article>
+
+  </div>
 </section>
 
-
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: yugmapprem@gmail.com</p>
-<p>Phone: +91 6282452191</p>
-<p>Location: Thrissur, Kerala</p>
-<p>LinkedIn: <a href="#">Add your LinkedIn URL</a></p>
+<section id="education" class="section">
+  <div class="container">
+    <h2>Education</h2>
+    <ul class="kv-list">
+      <li><strong>MCA:</strong> Ilahia College of Engineering & Technology, KTU (2023 – 2025)</li>
+      <li><strong>B.Sc Mathematics:</strong> Sree Narayana College, Calicut University (2020 – 2023)</li>
+    </ul>
+  </div>
 </section>
 
+<section id="certifications" class="section">
+  <div class="container">
+    <h2>Certifications</h2>
+    <ul class="kv-list">
+      <li>In the Trenches: SOC Operations – EC-Council (Coursera)</li>
+      <li>Certified IT Infrastructure & Cyber SOC Analyst – Red Team Hacker Academy</li>
+      <li>Cyber Security & Ethical Hacking Workshop – Blue Shell Technologies</li>
+    </ul>
+  </div>
+</section>
 
-<footer>
-<p>© 2026 Yugma P Prem</p>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="y"></span> Yugma P Prem • Cybersecurity Portfolio • GitHub Pages</p>
+  </div>
 </footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
